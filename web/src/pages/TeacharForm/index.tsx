@@ -1,9 +1,12 @@
 import React from 'react';
-
-// import { Container } from './styles';
+import PageHeader from '../../components/PageHeader';
 
 const TeacharForm: React.FC = () => {
-  return <h1>Teacher Form</h1>;
+  return (
+    < div id="page-teacher-form" className="contaienr" >
+      <PageHeader title="Que incrível que você quer dar aulas." />
+    </div >
+  );
 }
 
 export default TeacharForm;
