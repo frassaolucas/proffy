@@ -2,30 +2,42 @@ import React from 'react';
 
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
-import './styles.css'
+import './styles.css';
 
-const TeacherItem: React.FC = () => {
+export interface Teacher {
+  id: number;
+  avatar: string;
+  bio: string;
+  cost: number;
+  name: string;
+  subject: string;
+  whatsapp: string;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
   return (
     <article className="teacher-item">
       <header>
-        <img src="https://avatars1.githubusercontent.com/u/48368446?s=460&u=7de16bf897bd7213bf84f8da03590d64b32cba69&v=4" alt="Lucas Frassão" />
+        <img src={teacher.avatar} alt={teacher.name} />
 
         <div>
-          <strong>Lucas Frassão</strong>
-          <span>Inglês</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
 
       <p>
-        Não sabe falar direito, mas ensina o que consegue.
-            <br /><br />
-            Aprendeu a maior parte do que sabe pelo jogo online, com um dicionário do lado, matando mais palavras que um serial killer.
-          </p>
+        {teacher.bio}
+      </p>
 
       <footer>
         <p>
           Preço/hora
-              <strong>R$80,00</strong>
+          <strong>R$ {teacher.cost}</strong>
         </p>
 
         <button type="button">
