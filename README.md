@@ -46,7 +46,7 @@ It offers users a platform to connected students and teachers from various field
 1. Clone this repository:
 
 ```sh
-  $ git clone https://github.com/HigorSnt/proffy.git
+  $ git clone https://github.com/frassaolucas/proffy.git
 ```
 
 2. Running the application:
