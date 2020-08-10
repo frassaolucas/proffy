@@ -14,6 +14,10 @@
   <a href="#boom-start">Start</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
+<p align="center">
+  <img alt="proffy-mockup" width="650px" src="./.github/proffy_mockup.png" />
+<p>
+
 ## :fire: About
 
 **Proffy** is a web and mobile application designed by [Tiago Luchtenberg](https://www.linkedin.com/in/tiago-luchtenberg-0b9a3b97/) from [Rocketseat](https://rocketseat.com.br/). 
